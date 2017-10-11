@@ -9,7 +9,8 @@ package Constants;
 
 public class Constants {
 
-    public static final String CRYPTOCURRENCYURL = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR";
+    public static final String CRYPTOCURRENCYURL = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR";
+            //"https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR";
     public static final String USD = "USD";
     public static final String EUR = "EUR";
     public static final String BTC = "BTC";
