@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.example.android.mybit.R;
 
 import Fragments.FirstFragment;
+import Fragments.IntroFragment;
 import Fragments.SecondFragment;
 
 /**
@@ -15,8 +16,8 @@ import Fragments.SecondFragment;
 
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
-    private int NUM_ITEMS = 2;
-    private String[] titles= new String[]{"", "","Third Fragment"};
+    private int NUM_ITEMS = 3;
+    private String[] titles= new String[]{"", "",""};
 
     final int[] ICONS = new int[] {
             R.drawable.coin,
@@ -40,9 +41,12 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new FirstFragment();
+                return new IntroFragment();
             case 1:
+                return new FirstFragment();
+            case 2:
                 return new SecondFragment();
+
 
             default:
                 return null;
