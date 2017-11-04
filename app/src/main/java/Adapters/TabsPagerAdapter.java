@@ -16,7 +16,7 @@ import Fragments.SecondFragment;
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     private int NUM_ITEMS = 2;
-    private String[] titles= new String[]{"First Fragment", "Second Fragment","Third Fragment"};
+    private String[] titles= new String[]{"", "","Third Fragment"};
 
     final int[] ICONS = new int[] {
             R.drawable.coin,

@@ -11,10 +11,11 @@ import java.io.InputStreamReader;
 
 public class InputStreamUtil {
 
+
     public static String convertInputStreamToString(InputStream inputStream) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-        String line = "";
-        String result = "";
+          String line = "";
+         String result = "";
         while ((line = bufferedReader.readLine()) != null)
             result += line;
 

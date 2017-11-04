@@ -12,13 +12,17 @@ public class BitCoinObject {
     private Double BTC;
 
 
-    public BitCoinObject (Double BTC , String USD , String EUR){
-        this.BTC = BTC;
+    public BitCoinObject ( String USD , String EUR){
+
         this.USD =  USD;
         this.EUR = EUR;
 
     }
 
+
+    public BitCoinObject ( ){
+
+    }
     public String getUSD() {
         return USD;
     }
